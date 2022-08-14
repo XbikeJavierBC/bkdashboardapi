@@ -22,11 +22,11 @@ extension BKDashboardFlowModel {
                 title: "Current Ride",
                 type: .currentRide,
                 imageDefault: UIImage(
-                    named: "search_tab_icon",
+                    named: "current_rade_icon",
                     find: .sdk
                 ),
                 imageSelected: UIImage(
-                    named: "search_tab_icon",
+                    named: "current_rade_icon",
                     find: .sdk
                 )
             ),
@@ -34,11 +34,11 @@ extension BKDashboardFlowModel {
                 title: "My Progress",
                 type: .myProgress,
                 imageDefault: UIImage(
-                    named: "menu_tab_bar",
+                    named: "my_progress_icon",
                     find: .sdk
                 ),
                 imageSelected: UIImage(
-                    named: "menu_tab_bar_selected",
+                    named: "my_progress_icon",
                     find: .sdk
                 )
             )
