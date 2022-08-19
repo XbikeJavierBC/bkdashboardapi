@@ -23,5 +23,62 @@
             </objects>
             <point key="canvasLocation" x="139" y="124"/>
         </scene>
+        <!--Dashboard Side Bar View Controller-->
+        <scene sceneID="hdr-LA-0EY">
+            <objects>
+                <viewController restorationIdentifier="BKDashboardSideBarViewController" storyboardIdentifier="BKDashboardSideBarViewController" id="piL-XZ-Ymb" customClass="BKDashboardSideBarViewController" customModule="bkdashboardapi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ver-sh-mis">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-Pi-nRY" userLabel="containerSideMenuView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sb0-tm-1Zb" userLabel="containerChildView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mh-vu-MOS" userLabel="sideMenuButton">
+                                <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="m2u-yf-fSy"/>
+                                    <constraint firstAttribute="width" constant="40" id="tjI-xD-kWM"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="sideMenuButtonAction:" destination="piL-XZ-Ymb" eventType="touchUpInside" id="Fjl-ma-mMP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3J4-Wr-D3f"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3J4-Wr-D3f" firstAttribute="bottom" secondItem="5h3-Pi-nRY" secondAttribute="bottom" id="3b5-vv-f9x"/>
+                            <constraint firstItem="Sb0-tm-1Zb" firstAttribute="leading" secondItem="3J4-Wr-D3f" secondAttribute="leading" id="9Nh-at-w7F"/>
+                            <constraint firstItem="3J4-Wr-D3f" firstAttribute="trailing" secondItem="Sb0-tm-1Zb" secondAttribute="trailing" id="BlR-0q-axH"/>
+                            <constraint firstItem="0mh-vu-MOS" firstAttribute="top" secondItem="3J4-Wr-D3f" secondAttribute="top" id="HHK-AJ-hD6"/>
+                            <constraint firstItem="3J4-Wr-D3f" firstAttribute="bottom" secondItem="Sb0-tm-1Zb" secondAttribute="bottom" id="PFN-en-G6g"/>
+                            <constraint firstItem="3J4-Wr-D3f" firstAttribute="trailing" secondItem="5h3-Pi-nRY" secondAttribute="trailing" id="YM2-Bg-ZIy"/>
+                            <constraint firstItem="5h3-Pi-nRY" firstAttribute="top" secondItem="3J4-Wr-D3f" secondAttribute="top" id="gMw-kC-Ka0"/>
+                            <constraint firstItem="5h3-Pi-nRY" firstAttribute="leading" secondItem="3J4-Wr-D3f" secondAttribute="leading" id="gje-Rf-Kbg"/>
+                            <constraint firstItem="Sb0-tm-1Zb" firstAttribute="top" secondItem="3J4-Wr-D3f" secondAttribute="top" id="npS-6q-z5h"/>
+                            <constraint firstItem="0mh-vu-MOS" firstAttribute="leading" secondItem="3J4-Wr-D3f" secondAttribute="leading" constant="8" id="qi5-Gw-5Yb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerChildView" destination="Sb0-tm-1Zb" id="6Xn-Re-a3F"/>
+                        <outlet property="containerChildViewLeadingConstraint" destination="9Nh-at-w7F" id="d5a-a1-NWs"/>
+                        <outlet property="containerChildViewTrailingConstraint" destination="BlR-0q-axH" id="26c-o2-VkV"/>
+                        <outlet property="containerSideMenuView" destination="5h3-Pi-nRY" id="Sth-yN-HTB"/>
+                        <outlet property="containerSideMenuViewTopConstraint" destination="gMw-kC-Ka0" id="i7O-Wk-73a"/>
+                        <outlet property="rootView" destination="ver-sh-mis" id="KZl-qh-Msz"/>
+                        <outlet property="sideMenuButton" destination="0mh-vu-MOS" id="qHa-b5-ngA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1SP-C9-7sT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="845.07042253521126"/>
+        </scene>
     </scenes>
 </document>

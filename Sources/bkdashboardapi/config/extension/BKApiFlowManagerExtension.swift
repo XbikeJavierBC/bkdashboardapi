@@ -17,6 +17,11 @@ extension BKApiFlow: GHManagerModelDelegate {
                     fromStoryboard: self.getStoryboard(),
                     bundle: .module
                 )
+            case .dashboardSide:
+                return BKDashboardSideBarViewController.instantiate(
+                    fromStoryboard: self.getStoryboard(),
+                    bundle: .module
+                )
             default:
                 return nil
         }
@@ -24,7 +29,7 @@ extension BKApiFlow: GHManagerModelDelegate {
     
     public func getViewModel() -> GHBaseViewModelProtocol? {
         switch self {
-        case .dashboard:
+        case .dashboard, .dashboardSide:
                 return BKDashboardViewModel()
             default:
                 return nil
